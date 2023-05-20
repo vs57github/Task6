@@ -1,0 +1,14 @@
+number = input("Введите номер билета: ")
+
+first_half = number[:3]
+second_half = number[3:]
+
+# Вычисляем суммы первой и второй половин числа
+first_sum = sum(int(num) for num in first_half)
+second_sum = sum(int(num) for num in second_half)
+
+# Проверяем, является ли билет счастливым
+if first_sum == second_sum:
+    print("Поздравляем! У вас счастливый билет!")
+else:
+    print("Это не счастливый билет")
